@@ -8,18 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		F23D854A25F73FDB008FA80E /* PaypixlApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D854925F73FDB008FA80E /* PaypixlApp.swift */; };
-		F23D854C25F73FDB008FA80E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D854B25F73FDB008FA80E /* ContentView.swift */; };
+		F23D854C25F73FDB008FA80E /* OptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D854B25F73FDB008FA80E /* OptionView.swift */; };
 		F23D854E25F73FDC008FA80E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F23D854D25F73FDC008FA80E /* Assets.xcassets */; };
 		F23D855125F73FDC008FA80E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F23D855025F73FDC008FA80E /* Preview Assets.xcassets */; };
+		F23D855B25F74603008FA80E /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F23D855A25F74603008FA80E /* Launch Screen.storyboard */; };
+		F23D855E25F75F9A008FA80E /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D855D25F75F9A008FA80E /* AccountView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F23D854625F73FDB008FA80E /* Paypixl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Paypixl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F23D854925F73FDB008FA80E /* PaypixlApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaypixlApp.swift; sourceTree = "<group>"; };
-		F23D854B25F73FDB008FA80E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F23D854B25F73FDB008FA80E /* OptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionView.swift; sourceTree = "<group>"; };
 		F23D854D25F73FDC008FA80E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F23D855025F73FDC008FA80E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F23D855225F73FDC008FA80E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F23D855A25F74603008FA80E /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		F23D855D25F75F9A008FA80E /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,10 +57,12 @@
 			isa = PBXGroup;
 			children = (
 				F23D854925F73FDB008FA80E /* PaypixlApp.swift */,
-				F23D854B25F73FDB008FA80E /* ContentView.swift */,
+				F23D854B25F73FDB008FA80E /* OptionView.swift */,
+				F23D855D25F75F9A008FA80E /* AccountView.swift */,
 				F23D854D25F73FDC008FA80E /* Assets.xcassets */,
 				F23D855225F73FDC008FA80E /* Info.plist */,
 				F23D854F25F73FDC008FA80E /* Preview Content */,
+				F23D855A25F74603008FA80E /* Launch Screen.storyboard */,
 			);
 			path = Paypixl;
 			sourceTree = "<group>";
@@ -126,6 +132,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F23D855B25F74603008FA80E /* Launch Screen.storyboard in Resources */,
 				F23D855125F73FDC008FA80E /* Preview Assets.xcassets in Resources */,
 				F23D854E25F73FDC008FA80E /* Assets.xcassets in Resources */,
 			);
@@ -138,7 +145,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F23D854C25F73FDB008FA80E /* ContentView.swift in Sources */,
+				F23D855E25F75F9A008FA80E /* AccountView.swift in Sources */,
+				F23D854C25F73FDB008FA80E /* OptionView.swift in Sources */,
 				F23D854A25F73FDB008FA80E /* PaypixlApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
