@@ -10,9 +10,10 @@ import SwiftUI
 struct OptionView: View {
     
     
-    @State var currentSize : CGFloat = 600
+    @State var accountSegue = false
     var body: some View {
         
+        NavigationView{
         VStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/){
    
         
@@ -42,11 +43,21 @@ struct OptionView: View {
                 VStack{
                 HStack{
                    
-                    Button(action: {
-                        print("Portfolio")
-                    }, label: {
-                        DashboardButtonView(title: "My Portfolio", imageName: "folder", size: geometry.size.height)
-                    })
+                    
+                    NavigationLink(
+                        destination: AccountView(),
+                        isActive: $accountSegue,
+                        label: {
+                            Button(action: {
+                                print("Portfolio")
+                                accountSegue.toggle()
+                            }, label: {
+                                DashboardButtonView(title: "My Portfolio", imageName: "folder", size: geometry.size.height)
+                            })
+                        })
+                  
+                    
+                    
                     
                     Button(action: {
                         print("My Task")
@@ -89,7 +100,7 @@ struct OptionView: View {
                 HStack{
                     
                     Button(action: {
-                        print("Portfolio")
+                        print("Social")
                     }, label: {
                         DashboardButtonView(title: "Social Media", imageName: "social", size: geometry.size.height)
                     })
@@ -126,6 +137,9 @@ struct OptionView: View {
                 .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                 .scaledToFill()
         )
+        .navigationBarHidden(true)
+        
+    }
 
     }
 }

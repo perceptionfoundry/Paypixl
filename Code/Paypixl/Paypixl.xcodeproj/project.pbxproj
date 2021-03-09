@@ -13,6 +13,7 @@
 		F23D855125F73FDC008FA80E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F23D855025F73FDC008FA80E /* Preview Assets.xcassets */; };
 		F23D855B25F74603008FA80E /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F23D855A25F74603008FA80E /* Launch Screen.storyboard */; };
 		F23D855E25F75F9A008FA80E /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D855D25F75F9A008FA80E /* AccountView.swift */; };
+		F257D11525F77221008E231B /* InsetMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = F257D11425F77221008E231B /* InsetMap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		F23D855225F73FDC008FA80E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F23D855A25F74603008FA80E /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		F23D855D25F75F9A008FA80E /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		F257D11425F77221008E231B /* InsetMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsetMap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				F23D854925F73FDB008FA80E /* PaypixlApp.swift */,
 				F23D854B25F73FDB008FA80E /* OptionView.swift */,
 				F23D855D25F75F9A008FA80E /* AccountView.swift */,
+				F257D11425F77221008E231B /* InsetMap.swift */,
 				F23D854D25F73FDC008FA80E /* Assets.xcassets */,
 				F23D855225F73FDC008FA80E /* Info.plist */,
 				F23D854F25F73FDC008FA80E /* Preview Content */,
@@ -147,6 +150,7 @@
 			files = (
 				F23D855E25F75F9A008FA80E /* AccountView.swift in Sources */,
 				F23D854C25F73FDB008FA80E /* OptionView.swift in Sources */,
+				F257D11525F77221008E231B /* InsetMap.swift in Sources */,
 				F23D854A25F73FDB008FA80E /* PaypixlApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
