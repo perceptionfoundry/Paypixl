@@ -10,7 +10,12 @@ import SwiftUI
 struct OptionView: View {
     
     
+    @State var portfolioSegue = false
     @State var accountSegue = false
+    @State var droneSegue = false
+    @State var walletSegue = false
+    @State var gallerySegue = false
+    
     var body: some View {
         
         NavigationView{
@@ -34,6 +39,7 @@ struct OptionView: View {
                         .resizable()
                         .scaledToFill()
                         .frame(width: 50, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .shadow(color: Color(#colorLiteral(red: 0.1458410025, green: 0.2502840161, blue: 0.5443473458, alpha: 1)), radius: 20, x: 0, y: 0)
                 }
                 .padding(.top, 20)
                 .padding(.horizontal, 30)
@@ -45,12 +51,12 @@ struct OptionView: View {
                    
                     
                     NavigationLink(
-                        destination: AccountView(),
-                        isActive: $accountSegue,
+                        destination: Text("Portfoliio") ,
+                        isActive: $portfolioSegue,
                         label: {
                             Button(action: {
                                 print("Portfolio")
-                                accountSegue.toggle()
+                                portfolioSegue.toggle()
                             }, label: {
                                 DashboardButtonView(title: "My Portfolio", imageName: "folder", size: geometry.size.height)
                             })
@@ -58,12 +64,18 @@ struct OptionView: View {
                   
                     
                     
+                    NavigationLink(
+                        destination: WalletView(),
+                        isActive: $walletSegue,
+                        label: {
                     
                     Button(action: {
                         print("My Task")
+                        walletSegue.toggle()
                     }, label: {
-                        DashboardButtonView(title: "My My Task", imageName: "task", size: geometry.size.height)
+                        DashboardButtonView(title: "My Task", imageName: "task", size: geometry.size.height)
                     })
+                        })
                 }
                     
                 HStack{
@@ -74,26 +86,49 @@ struct OptionView: View {
                         DashboardButtonView(title: "Public Map", imageName: "map", size: geometry.size.height)
                     })
                     
+                    
+                    NavigationLink(
+                        destination: MyDroneView(),
+                        isActive: $droneSegue,
+                        label: {
+                    
                     Button(action: {
                         print("DRONE")
+                        droneSegue.toggle()
                     }, label: {
                         DashboardButtonView(title: "My Drones", imageName: "drone", size: geometry.size.height)
                     })
+                            
+                        })
                 }
                     
                 HStack{
                     
+                    
+                    NavigationLink(
+                        destination: GalleryView() ,
+                        isActive: $gallerySegue,
+                        label: {
                     Button(action: {
                         print("Capture")
+                        gallerySegue.toggle()
                     }, label: {
                         DashboardButtonView(title: "Capture", imageName: "capture", size: geometry.size.height)
                     })
+                        })
+                    
+                    NavigationLink(
+                        destination: AccountView() ,
+                        isActive: $accountSegue,
+                        label: {
                     
                     Button(action: {
                         print("My Account")
+                        accountSegue.toggle()
                     }, label: {
                         DashboardButtonView(title: "My Accout", imageName: "account", size: geometry.size.height)
                     })
+                        })
                 }
                     
                     
@@ -132,10 +167,20 @@ struct OptionView: View {
         }// VSTACK END
         
         .background(
-            Image("background_image")
-                .resizable()
-                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-                .scaledToFill()
+            
+    
+                Image("background_image")
+                    .resizable()
+                   
+                    .scaledToFill()
+                    .overlay(LinearGradient(gradient: Gradient(colors: [Color(#colorLiteral(red: 0.04567161947, green: 0.09620184451, blue: 0.2282870114, alpha: 1)), Color.clear]), startPoint: .top, endPoint: .bottom)
+                                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                    )
+                    
+               
+                
+                
+       
         )
         .navigationBarHidden(true)
         

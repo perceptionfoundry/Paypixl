@@ -12,8 +12,11 @@
 		F23D854E25F73FDC008FA80E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F23D854D25F73FDC008FA80E /* Assets.xcassets */; };
 		F23D855125F73FDC008FA80E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F23D855025F73FDC008FA80E /* Preview Assets.xcassets */; };
 		F23D855B25F74603008FA80E /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F23D855A25F74603008FA80E /* Launch Screen.storyboard */; };
-		F23D855E25F75F9A008FA80E /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D855D25F75F9A008FA80E /* AccountView.swift */; };
+		F23D855E25F75F9A008FA80E /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D855D25F75F9A008FA80E /* GalleryView.swift */; };
+		F23E074725F9FB3F00C837CF /* MyDroneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23E074625F9FB3F00C837CF /* MyDroneView.swift */; };
+		F23E074B25FA185400C837CF /* WalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23E074A25FA185300C837CF /* WalletView.swift */; };
 		F257D11525F77221008E231B /* InsetMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = F257D11425F77221008E231B /* InsetMap.swift */; };
+		F281FDC925FA40D60012DF8B /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F281FDC825FA40D60012DF8B /* AccountView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +27,11 @@
 		F23D855025F73FDC008FA80E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F23D855225F73FDC008FA80E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F23D855A25F74603008FA80E /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		F23D855D25F75F9A008FA80E /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		F23D855D25F75F9A008FA80E /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
+		F23E074625F9FB3F00C837CF /* MyDroneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDroneView.swift; sourceTree = "<group>"; };
+		F23E074A25FA185300C837CF /* WalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletView.swift; sourceTree = "<group>"; };
 		F257D11425F77221008E231B /* InsetMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsetMap.swift; sourceTree = "<group>"; };
+		F281FDC825FA40D60012DF8B /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +66,11 @@
 			children = (
 				F23D854925F73FDB008FA80E /* PaypixlApp.swift */,
 				F23D854B25F73FDB008FA80E /* OptionView.swift */,
-				F23D855D25F75F9A008FA80E /* AccountView.swift */,
+				F23D855D25F75F9A008FA80E /* GalleryView.swift */,
 				F257D11425F77221008E231B /* InsetMap.swift */,
+				F23E074625F9FB3F00C837CF /* MyDroneView.swift */,
+				F23E074A25FA185300C837CF /* WalletView.swift */,
+				F281FDC825FA40D60012DF8B /* AccountView.swift */,
 				F23D854D25F73FDC008FA80E /* Assets.xcassets */,
 				F23D855225F73FDC008FA80E /* Info.plist */,
 				F23D854F25F73FDC008FA80E /* Preview Content */,
@@ -148,10 +157,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F23D855E25F75F9A008FA80E /* AccountView.swift in Sources */,
+				F23D855E25F75F9A008FA80E /* GalleryView.swift in Sources */,
+				F23E074725F9FB3F00C837CF /* MyDroneView.swift in Sources */,
 				F23D854C25F73FDB008FA80E /* OptionView.swift in Sources */,
 				F257D11525F77221008E231B /* InsetMap.swift in Sources */,
+				F281FDC925FA40D60012DF8B /* AccountView.swift in Sources */,
 				F23D854A25F73FDB008FA80E /* PaypixlApp.swift in Sources */,
+				F23E074B25FA185400C837CF /* WalletView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
