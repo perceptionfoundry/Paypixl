@@ -96,6 +96,7 @@ struct MyDroneView: View{
             
         }.background(
             Color(#colorLiteral(red: 0.04567161947, green: 0.09620184451, blue: 0.2282870114, alpha: 1))
+                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                 
         )
 //                Spacer()

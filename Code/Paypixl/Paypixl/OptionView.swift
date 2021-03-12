@@ -12,9 +12,12 @@ struct OptionView: View {
     
     @State var portfolioSegue = false
     @State var accountSegue = false
+    @State var publicMapSegue = false
     @State var droneSegue = false
-    @State var walletSegue = false
-    @State var gallerySegue = false
+    @State var taskSegue = false
+    @State var captureSegue = false
+    @State var socialSegue = false
+    @State var settingSegue = false
     
     var body: some View {
         
@@ -66,12 +69,12 @@ struct OptionView: View {
                     
                     NavigationLink(
                         destination: WalletView(),
-                        isActive: $walletSegue,
+                        isActive: $taskSegue,
                         label: {
                     
                     Button(action: {
                         print("My Task")
-                        walletSegue.toggle()
+                        taskSegue.toggle()
                     }, label: {
                         DashboardButtonView(title: "My Task", imageName: "task", size: geometry.size.height)
                     })
@@ -80,12 +83,17 @@ struct OptionView: View {
                     
                 HStack{
                     
+                    NavigationLink(
+                        destination: Text("Public Map") ,
+                        isActive: $publicMapSegue,
+                        label: {
                     Button(action: {
                         print("Public Map")
+                        publicMapSegue.toggle()
                     }, label: {
                         DashboardButtonView(title: "Public Map", imageName: "map", size: geometry.size.height)
                     })
-                    
+                })
                     
                     NavigationLink(
                         destination: MyDroneView(),
@@ -107,11 +115,11 @@ struct OptionView: View {
                     
                     NavigationLink(
                         destination: GalleryView() ,
-                        isActive: $gallerySegue,
+                        isActive: $captureSegue,
                         label: {
                     Button(action: {
                         print("Capture")
-                        gallerySegue.toggle()
+                        captureSegue.toggle()
                     }, label: {
                         DashboardButtonView(title: "Capture", imageName: "capture", size: geometry.size.height)
                     })
@@ -134,17 +142,31 @@ struct OptionView: View {
                     
                 HStack{
                     
+                    NavigationLink(
+                        destination: Text("Social Media") ,
+                        isActive: $socialSegue,
+                        label: {
+                    
                     Button(action: {
                         print("Social")
+                        socialSegue.toggle()
                     }, label: {
                         DashboardButtonView(title: "Social Media", imageName: "social", size: geometry.size.height)
                     })
+                        })
                     
+                    NavigationLink(
+                        destination: Text("Setting") ,
+                        isActive: $settingSegue,
+                        label: {
                     Button(action: {
                         print("Settings")
+                        settingSegue.toggle()
                     }, label: {
                         DashboardButtonView(title: "Settings", imageName: "setting", size: geometry.size.height)
                     })
+                    
+                })
                 }
                     
             }

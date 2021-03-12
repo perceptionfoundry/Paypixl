@@ -60,8 +60,8 @@ struct WalletView: View {
                     .padding(.bottom, 12)
                 
                    
-                
-                
+                VStack{
+                ScrollView{
                 VStack {
                     
                     Rectangle()
@@ -120,6 +120,12 @@ struct WalletView: View {
                     modeView(BG: Color(#colorLiteral(red: 0.8273870349, green: 0.8274870515, blue: 0.8273531795, alpha: 1)), type: "Ethereum", title: "Ethereum Wallet")
                     
                     
+                 
+                    
+                  
+                }
+                }
+                    
                     Button(action: {
                         
                     }, label: {
@@ -139,21 +145,21 @@ struct WalletView: View {
 
                     })
                   
-//                    Text("© Raven Spatial, Inc. 2021")
-//                        .font(.caption)
-//                        .foregroundColor(.gray)
-                    
-                  
-                }.background(
+                        Text("© Raven Spatial, Inc. 2021")
+                            .font(.caption)
+                            .foregroundColor(.gray)
+              
+            }
+                .background(
                     Color(#colorLiteral(red: 0.04567161947, green: 0.09620184451, blue: 0.2282870114, alpha: 1))
+                        .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                         
                 )
                         
                 
-                
-          
+              
             
-//                    Spacer()
+                  
              
              
                 
