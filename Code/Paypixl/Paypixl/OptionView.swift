@@ -84,7 +84,7 @@ struct OptionView: View {
                 HStack{
                     
                     NavigationLink(
-                        destination: Text("Public Map") ,
+                        destination: PublicMapView() ,
                         isActive: $publicMapSegue,
                         label: {
                     Button(action: {

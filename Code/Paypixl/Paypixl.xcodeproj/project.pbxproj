@@ -73,11 +73,11 @@
 				F23E074625F9FB3F00C837CF /* MyDroneView.swift */,
 				F23E074A25FA185300C837CF /* WalletView.swift */,
 				F281FDC825FA40D60012DF8B /* AccountView.swift */,
+				F252E7CB25FB91A60025870C /* PublicMapView.swift */,
 				F23D854D25F73FDC008FA80E /* Assets.xcassets */,
 				F23D855225F73FDC008FA80E /* Info.plist */,
 				F23D854F25F73FDC008FA80E /* Preview Content */,
 				F23D855A25F74603008FA80E /* Launch Screen.storyboard */,
-				F252E7CB25FB91A60025870C /* PublicMapView.swift */,
 			);
 			path = Paypixl;
 			sourceTree = "<group>";

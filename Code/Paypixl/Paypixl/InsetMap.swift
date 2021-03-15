@@ -12,14 +12,14 @@ struct InsetMap: View {
     
 //    var heightValue : CGFloat
     
-    @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 40.7128, longitude: 74.0060), span: MKCoordinateSpan(latitudeDelta: 5, longitudeDelta: 5))
+    @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 36.7783, longitude: 119.4179), span: MKCoordinateSpan(latitudeDelta: 5, longitudeDelta: 5))
     
     var body: some View {
     
        
         Map(coordinateRegion: $region)
-            .frame(height:250)
-            .cornerRadius(12)
+//            .frame(height:250)
+//            .cornerRadius(12)
     }
 }
 
